@@ -64,3 +64,10 @@ function updateRadio(){
         aud.src = "./assets/media/audio/party-horn.mp3";
     }
 }
+
+let frm = document.getElementById("party-horn-form");
+frm.addEventListener("submit", stopSubmitting);
+
+function stopSubmitting(e){
+    e.preventDefault();
+}
